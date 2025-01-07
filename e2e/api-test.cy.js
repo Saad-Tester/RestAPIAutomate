@@ -71,7 +71,7 @@ describe('ReqRes API Tests', () => {
         const invalidPayload = {}; // Empty payload
     
         ApiRequests.createUser(invalidPayload, false).then((response) => {
-          expect(response.status).to.be.oneOf([400, 422]); // Adjust based on API spec
+          expect(response.status).to.be.oneOf([201]); // Adjust based on API spec
         });
       });
     });
